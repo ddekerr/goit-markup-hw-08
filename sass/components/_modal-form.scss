@@ -1,0 +1,129 @@
+.modal-form__field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-form__label{
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondary-color;
+}
+
+.modal-form__input{
+  height: 40px;
+  padding: 12px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  @include transition(border-color);
+
+  &:focus{
+    border-color: $accent-color;
+  }
+}
+
+.modal-form__input:focus + .icon{
+  color: $accent-color;
+}
+
+.modal-form__icon{
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+
+  @include transition(color);
+}
+
+.modal-form__textarea{
+  height: 120px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+
+  @include transition(border-color);
+
+  &:focus{
+    border-color: $accent-color;
+  }
+}
+
+.modal-form__field--mb{
+  margin-bottom: 20px;
+}
+
+.modal-form__textarea::placeholder{
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form__license{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.modal-form__icon-license{
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid $main-color;
+  border-radius: 2px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color, background-image;
+}
+
+.modal-form__checkbox{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .modal-form__icon-license{
+    background-color: $accent-color;
+    background-image: url(../images/check-on.svg);
+    border-color: $accent-color;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+}
+
+.modal-form__label-license{
+  font-size: 14px;
+  line-height: 1.71;
+  color: $secondary-color;
+}
+
+.modal-form__link{
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+.modal-form__button{
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.particular {
+  display: flex;
+  @extend %list;
+}
+
+.particular__item{
+  width: 270px;
+
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
+.particular__thumb{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
+}
+
+.particular__title{
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase; 
+}
+
+.particular__description{
+  margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 1.7;
+  color: var(--secondary-color);  
+}
