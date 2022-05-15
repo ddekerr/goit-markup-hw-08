@@ -1,33 +1,33 @@
-.main-contact{
-  display: flex;
-  @extend %list;
-}
+// .main-contact{
+//   display: flex;
+//   @extend %list;
+// }
 
 
-.main-contact__item:not(:last-child) {
-  margin-right: 50px;
-}
+// .main-contact__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
-.main-contact__link{
-  display: flex;
-  align-items: center;
+// .main-contact__link{
+//   display: flex;
+//   align-items: center;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: $secondary-color;
+//   font-weight: 500;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   color: $secondary-color;
 
-  @include transition(color);
+//   @include transition(color);
 
-  &:hover, &:focus{
-    color: $accent-color;
-  }
-}
+//   &:hover, &:focus{
+//     color: $accent-color;
+//   }
+// }
 
-.main-contact__icon{
-  display: block;
-  margin-right: 10px;
+// .main-contact__icon{
+//   display: block;
+//   margin-right: 10px;
 
-  @extend .icon;
-}
+//   @extend .icon;
+// }

@@ -1,50 +1,50 @@
-.modal{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+// .modal{
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 528px;
-  min-height: 581px;
-  padding: 40px;
+//   min-width: 528px;
+//   min-height: 581px;
+//   padding: 40px;
 
-  background-color: $secondary-bg-color;
-  @include transition(transform);
+//   background-color: $secondary-bg-color;
+//   @include transition(transform);
 
-  .backdrop--is-hidden &{
-    transform: translate(-50% -50%) scale(0.1);
-  }
-}
+//   .backdrop--is-hidden &{
+//     transform: translate(-50% -50%) scale(0.1);
+//   }
+// }
 
-.modal__title{
-  display: block;
-  margin-bottom: 12px;
+// .modal__title{
+//   display: block;
+//   margin-bottom: 12px;
 
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  color: $main-color;
-}
+//   font-size: 20px;
+//   line-height: 1.15;
+//   text-align: center;
+//   color: $main-color;
+// }
 
-.modal__close-button{
-  position: absolute;
-  top: 8px;
-  right: 8px;
+// .modal__close-button{
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
 
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.1);;
-  background-color: $main-bg-color;
+//   cursor: pointer;
+//   border: 1px solid rgba(0, 0, 0, 0.1);;
+//   background-color: $main-bg-color;
 
-  @include transition(color);
+//   @include transition(color);
 
-  &:hover, &:focus{
-    color: $accent-color;
-  }
-}
+//   &:hover, &:focus{
+//     color: $accent-color;
+//   }
+// }
