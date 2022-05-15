@@ -12,7 +12,6 @@
         "../sass/components/_header.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_main-nav.scss",
-        "../sass/components/_main-contact.scss",
         "../sass/components/_hero.scss",
         "../sass/components/_section.scss",
         "../sass/components/_particular.scss",
