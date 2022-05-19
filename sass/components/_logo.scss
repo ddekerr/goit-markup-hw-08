@@ -6,6 +6,11 @@
   text-decoration: none;
 
   color: $main-color;
+
+  @media screen and (min-width: 1600px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__accent{
