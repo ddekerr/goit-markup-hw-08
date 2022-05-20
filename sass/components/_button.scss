@@ -1,27 +1,27 @@
-// %button {
-//   min-width: 73px;
-//   border: 0;
+%button {
+  min-width: 73px;
+  border: 0;
 
-//   font-size: 16px;
-//   text-align: center;
-//   color: $title-color;
-//   border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  color: $title-color;
+  border-radius: 4px;
 
-//   cursor: pointer;
-// }
+  cursor: pointer;
+}
 
-// .button--special{  
-//   @extend %button;
+.button--special{  
+  @extend %button;
 
-//   padding: 10px 32px;
+  padding: 10px 32px;
 
-//   font-weight: 700;
-//   line-height: 1.88;
-//   letter-spacing: 0.06em;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 
-//   background-color: $accent-color;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-// }
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 
 // .button--default {
