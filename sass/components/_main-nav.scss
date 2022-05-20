@@ -107,7 +107,7 @@
     justify-content: center;
   }
 
-  @media screen and (min-width: 1600px){
+  @media screen and (min-width: 1200px){
     flex-direction: row;
     align-items: center;
   }
@@ -123,11 +123,11 @@
   &:first-child{
     @media screen and
     (min-width: 768px) and
-    (max-width: 1599px){
+    (max-width: 1199px){
       margin-bottom: 10px;
     }
 
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
       margin-right: 30px;
     }
   }
@@ -155,7 +155,7 @@
     line-height: 1.14;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
 }
