@@ -1,99 +1,160 @@
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-//   background-color: $footer-bg-color;
-// }
+  background-color: $footer-bg-color;
+}
 
-// .footer__inner{
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer__inner{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
 
-// .footer__nav{
-//   margin-right: 70px;
-//   flex-grow: 1;
-// }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around; 
+  }
 
-// .footer__logo {
-//   display: inline-block;
-//   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
 
-//   color: $title-color;
-// }
+.footer__nav,
+.footer__join{
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 165px) / 2);
+  }
 
-// .footer__address {
-//   font-style: normal;
-//   @extend %list;
-// }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
 
-// .footer__address-item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
+.footer__subscribe{
+  flex-grow: 1;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
 
-// .footer__address-link {
-//   font-size: 14px;
-//   line-height: 1.71;
-//   text-decoration: none;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
 
-//   color: rgba(255, 255, 255, 0.6);
+.footer__nav{
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
 
-//   @include transition(color);
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
 
-//   &:hover, &:focus{
-//     color: $accent-color;
-//   }
-// }
+  color: $title-color;
+}
 
-// .footer__address-link--white-color{
-//   color: $title-color;
-// }
+.footer__address {
+  font-style: normal;
+  @extend %list;
 
-// .footer__join{
-//   margin-right: 93px;
-// }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
 
-// .footer__text{
-//   margin-top: 0;
-//   margin-bottom: 20px;
+.footer__address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   text-transform: uppercase;
-//   color: $title-color;
-// }
+.footer__address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
 
+  color: rgba(255, 255, 255, 0.6);
 
+  transition: color $transition;
 
-// .footer__form{
-//   display: flex;
-//   align-items: center;
-// }
+  &:hover, &:focus{
+    color: $accent-color;
+  }
+}
 
-// .footer__input{
-//   width: 358px;
-//   height: 50px;
-//   padding: 15px 16px;
-//   margin-right: 12px;
+.footer__address-link--white-color{
+  color: $title-color;
+}
 
-//   color: rgba(255, 255, 255, 0.6);
-//   background-color: $footer-bg-color;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   border-radius: 4px;
-// }
+.footer__join{
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
 
-// .footer__input::placeholder{
-//   font-size: 16px;
-//   line-height: 1.25;
-//   color: rgba(255, 255, 255, 0.6);
-// }
+.footer__text{
+  margin-top: 0;
+  margin-bottom: 20px;
 
-// .footer__button{
-//   display: flex;
-//   align-items: center;
-// }
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-color;
+}
 
-// .footer__icon{
-//  margin-left: 10px;
-// }
+.footer__social{
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__form{
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__input{
+  height: 50px;
+  padding: 15px 16px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $footer-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.footer__input::placeholder{
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__button{
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}
+
+.footer__icon{
+ margin-left: 10px;
+ @extend %icon;
+}
