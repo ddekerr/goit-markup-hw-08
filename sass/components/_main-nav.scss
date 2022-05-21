@@ -17,6 +17,11 @@
     }
   }
 
+  @media screen and (max-width: 479px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -29,6 +34,12 @@
   @extend %list;
   @media screen and (min-width: 768px){
     display: flex;
+  }
+}
+
+.main-nav__item{
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 }
 
@@ -58,6 +69,10 @@
     color: $accent-color;
   }
 
+  @media screen and (max-width: 479px) {
+    font-size: 20px;
+  }
+  
   @media screen and (min-width: 768px){
     position: relative;
 
@@ -97,9 +112,15 @@
   display: flex;
 
   @media screen and (max-width: 767px){
+    width: calc(100% - 80px);
+    align-items: center;
     flex-direction: column-reverse;
     position: absolute;
     bottom: 134px;
+  }
+
+  @media screen and (max-width: 479px){
+    width: calc(100% - 40px);
   }
 
   @media screen and (min-width: 768px){
@@ -147,6 +168,10 @@
     color: $accent-color;
   }
 
+  @media screen and (max-width:479px) {
+    font-size: 18px;
+  }
+
   @media screen and (min-width:768px) {
     display: flex;
     align-items: center;
@@ -166,6 +191,10 @@
     line-height: 1.18;
     color: $accent-color;
   }
+
+  @media screen and (max-width:479px) {
+    font-size: 24px;
+  }
 }
 
 .main-nav__contact-icon{
@@ -181,6 +210,9 @@
 // Social list
 .main-nav__social{
   position: absolute;
+
+  width: calc(100% - 80px);
+  justify-content: center;
   bottom: 48px;
 
   display: flex;
@@ -189,6 +221,10 @@
 
   @media screen and (min-width:768px) {
     display: none;
+  }
+
+  @media screen and (max-width: 479px){
+    width: calc(100% - 40px);
   }
 }
 
@@ -205,6 +241,11 @@
     padding-right: 0;
     border: none;
   }
+
+  @media screen and (max-width: 479px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .main-nav__social-link{
@@ -213,6 +254,10 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
+
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+  }
 }
 
 // Toogle menu Btn
