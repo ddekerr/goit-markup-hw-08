@@ -17,11 +17,17 @@
 }
 
 body {
-  padding-top: 81px;
+  padding-top: 61px;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding-top: 81px;
+  }
 }
 
 img {
@@ -988,12 +994,19 @@ img {
 }
 
 .footer__input {
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .footer__input {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 1199px) {
