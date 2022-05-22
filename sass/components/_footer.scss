@@ -44,6 +44,10 @@
 }
 
 .footer__nav{
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -59,14 +63,10 @@
 .footer__address {
   font-style: normal;
   @extend %list;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
 }
 
 .footer__address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__address-link {
@@ -88,6 +88,10 @@
 }
 
 .footer__join{
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
@@ -102,12 +106,6 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-color;
-}
-
-.footer__social{
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 
 .footer__form{
