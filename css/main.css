@@ -957,7 +957,7 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -972,10 +972,8 @@ img {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .filter__item:not(:last-child) {
-    margin-bottom: 15px;
-  }
+.filter__item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
