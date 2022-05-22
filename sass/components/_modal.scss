@@ -4,26 +4,14 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 
+  width: 450px;
   padding: 40px;
 
   background-color: $secondary-bg-color;
   transition: transform $transition;
 
-  @media screen and (max-width: 767px) {
-    width: 90%;
-    margin: o auto;
-  }
-
-  @media screen and (max-height: 639px) {
-    padding: 15px;
-  }
-
-  @media screen and (min-width: 768px) {
-    min-width: 450px;
-  }
-
   @media screen and (min-width: 1200px) {
-    min-width: 528px;
+    width: 528px;
   }
 
   .backdrop--is-hidden &{
@@ -43,11 +31,6 @@
 
   @media screen and (max-width: 1199px) {
     line-height: 1.5;
-  }
-
-  @media screen and (max-height: 639px) {
-    font-size: 14px;
-    margin-bottom: 6px;
   }
 }
 

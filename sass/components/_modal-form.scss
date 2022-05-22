@@ -7,9 +7,7 @@
 }
 
 .modal-form__field--mb{
-  @media screen and (min-height: 640px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .modal-form__label{
@@ -31,11 +29,6 @@
 
   transition: border-color $transition;
 
-  @media screen and (max-height: 639px) {
-    height: 30px;
-    padding-left: 30px;
-  }
-
   &:focus{
     border-color: $accent-color;
   }
@@ -53,11 +46,6 @@
   transition: color $transition;
 
   @extend %icon;
-
-  @media screen and (max-height: 639px) {
-    left: 6px;
-    bottom: 6px;
-  }
 }
 
 .modal-form__textarea{
@@ -70,10 +58,6 @@
   resize: none;
 
   transition: border-color $transition;
-
-  @media screen and (max-height: 639px){
-    height: 100px;
-  }
 
   &:focus{
     border-color: $accent-color;
@@ -91,11 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-
-  @media screen and (min-height: 640px) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 .modal-form__icon-license{
@@ -134,16 +114,13 @@
 }
 
 .modal-form__label-license{
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: $secondary-color;
 
-  @media screen and (max-height: 639px) {
-    font-size: 12px;
-  }
-
-  @media screen and (max-width: 1199px) {
-    line-height: 1.17;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -155,8 +132,4 @@
 .modal-form__button{
   display: block;
   margin: 0 auto;
-
-  @media screen and (max-height: 639px){
-    font-size: 12px
-  }
 }
