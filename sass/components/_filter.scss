@@ -8,6 +8,7 @@
 
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -20,7 +21,9 @@
     // }
   }
 
-  &:not(:nth-last-child(-n+2)){
-    margin-bottom: 15px;
+  @media screen and (max-width: 767px) {
+    &:not(:nth-last-child(-n+2)){
+      margin-bottom: 15px;
+    }
   }
 }

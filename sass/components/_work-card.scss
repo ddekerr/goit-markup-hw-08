@@ -1,6 +1,9 @@
 .work-card{
   display: block;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   text-decoration: none;
   transition: box-shadow $transition;
@@ -63,6 +66,7 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+  flex-grow: 1;
 }
 
 .work-card__title {
